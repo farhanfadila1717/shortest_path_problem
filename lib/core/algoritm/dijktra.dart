@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 const int kMaxInt = 32767;
 
 class Dijkstra {
