@@ -117,6 +117,13 @@ class ResultsDijsktra {
     required this.distances,
   });
 
+  int stepDistance(int distance) {
+    final index = distances.indexOf(distance);
+    var temp = distance;
+
+    return temp - distances.elementAt(index - 1);
+  }
+
   factory ResultsDijsktra.empty() => const ResultsDijsktra(
         source: 0,
         destination: 1,

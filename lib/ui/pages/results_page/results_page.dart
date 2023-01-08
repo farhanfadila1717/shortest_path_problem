@@ -117,6 +117,7 @@ class _ResultsPageState extends ConsumerState<ResultsPage>
                         },
                         separatorBuilder: (_, index) {
                           final dist = dijkstra.distances[index + 1];
+                          final r = dijkstra.stepDistance(dist);
                           return SizedBox(
                             height: 50,
                             width: 45,
@@ -128,7 +129,9 @@ class _ResultsPageState extends ConsumerState<ResultsPage>
                                   thickness: 1,
                                 ),
                                 ColoredBox(
-                                    color: Colors.white, child: Text('$dist')),
+                                  color: Colors.white,
+                                  child: Text('$r'),
+                                ),
                               ],
                             ),
                           );

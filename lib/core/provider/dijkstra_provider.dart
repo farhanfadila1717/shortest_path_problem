@@ -3,9 +3,7 @@ import 'package:riset_operasional/core/algoritm/dijktra.dart';
 
 final dijkstraProvider =
     StateNotifierProvider<DijkstraNotifier, ResultsDijsktra>(
-  (ref) {
-    return DijkstraNotifier();
-  },
+  (ref) => DijkstraNotifier(),
 );
 
 class DijkstraNotifier extends StateNotifier<ResultsDijsktra> {
