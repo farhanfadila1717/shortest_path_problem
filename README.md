@@ -12,7 +12,7 @@ Anggota Kelompok
 ### How to use apps
 * Download & Install apk [dowload link](https://drive.google.com/file/d/1GwqjrjzzDly-g2pRw1JXZ0c9U7rRe5R3/view?usp=sharing)
 * Open Dijkstra app
-* Create node / using test data
+* Create custom graph / using test graph data
 * Input node distances
 * click `Calculate` for getting results
 
